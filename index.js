@@ -1,4 +1,4 @@
-// index.js (project ke root me)
+// index.js 
 const express = require('express');
 const cors = require('cors');
 const pool = require('./db'); // /db/index.js
@@ -79,7 +79,7 @@ app.get('/healthz', (req, res) => {
     res.status(200).send("OK");
 });
 
-// REDIRECT: place at the end!
+// REDIRECT
 app.get('/:code', async (req, res) => {
     const { code } = req.params;
     try {
